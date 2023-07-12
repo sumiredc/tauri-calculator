@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>電卓</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+          <div class="card" style="max-width: 300px; min-width: 300px">
+            <div class="card-header d-grid gap-1">
+              <input
+                type="text"
+                class="form-control form-control-lg w-100 text-end"
+                name="display"
+                readonly
+                value="0"
+              />
+            </div>
+            <div class="card-body d-grid gap-3">
+              <div class="row row-cols-4 g-3">
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger rounded-pill w-100"
+                    data-btn="AC"
+                  >
+                    AC
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary rounded-pill w-100"
+                    data-btn="+/-"
+                  >
+                    +/-
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary rounded-pill w-100"
+                    data-btn="%"
+                  >
+                    %
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary rounded-pill w-100"
+                    data-btn="÷"
+                  >
+                    ÷
+                  </button>
+                </div>
+              </div>
+              <div class="row row-cols-4 g-3">
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary rounded-pill w-100"
+                    data-btn="7"
+                  >
+                    7
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary rounded-pill w-100"
+                    data-btn="8"
+                  >
+                    8
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary rounded-pill w-100"
+                    data-btn="9"
+                  >
+                    9
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary rounded-pill w-100"
+                    data-btn="×"
+                  >
+                    ×
+                  </button>
+                </div>
+              </div>
+              <div class="row row-cols-4 g-3">
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary rounded-pill w-100"
+                    data-btn="4"
+                  >
+                    4
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary rounded-pill w-100"
+                    data-btn="5"
+                  >
+                    5
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary rounded-pill w-100"
+                    data-btn="6"
+                  >
+                    6
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary rounded-pill w-100"
+                    data-btn="-"
+                  >
+                    -
+                  </button>
+                </div>
+              </div>
+              <div class="row row-cols-4 g-3">
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary rounded-pill w-100"
+                    data-btn="1"
+                  >
+                    1
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary rounded-pill w-100"
+                    data-btn="2"
+                  >
+                    2
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary rounded-pill w-100"
+                    data-btn="3"
+                  >
+                    3
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary rounded-pill w-100"
+                    data-btn="+"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="row row-cols-4 g-3">
+                <div class="col col-6">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary rounded-pill w-100"
+                    data-btn="0"
+                  >
+                    0
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary rounded-pill w-100"
+                    data-btn="."
+                  >
+                    .
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-outline-success rounded-pill w-100"
+                    data-btn="="
+                  >
+                    =
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
